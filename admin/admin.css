@@ -1,0 +1,16 @@
+:root{--ink:#0E1F3D;--gold:#F2B01E;--red:#C8372D;--bg:#EEF1F6;--card:#fff;--mut:#5d6b85}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+nav{background:var(--ink);display:flex;flex-wrap:wrap;gap:4px;padding:10px 16px;align-items:center}nav b{color:#fff;font-size:20px;margin-right:18px}nav b i{color:var(--gold)}
+nav a{color:#c9d3e8;padding:8px 14px;border-radius:8px;text-decoration:none}nav a.on,nav a:hover{background:var(--gold);color:var(--ink)}nav .out{margin-left:auto}
+main{max-width:1100px;margin:24px auto;padding:0 16px}h1{margin:0 0 16px}h2{margin:28px 0 10px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.stat{background:var(--card);padding:18px;border-radius:14px;border-left:5px solid var(--ink)}.stat.hot{border-color:var(--red)}.stat span{color:var(--mut)}.stat b{display:block;font-size:26px}.stat small{color:var(--mut)}
+table{width:100%;background:var(--card);border-collapse:collapse;border-radius:12px;overflow:hidden;display:block;overflow-x:auto}
+th,td{padding:10px 14px;text-align:left;white-space:nowrap}th{background:#dfe5f0;font-size:13px}tr+tr td{border-top:1px solid #edf0f6}
+.row{display:flex;flex-wrap:wrap;gap:10px;background:var(--card);padding:14px;border-radius:12px;margin:10px 0}
+input,select{padding:10px;border:1px solid #cdd5e4;border-radius:8px;font:inherit;flex:1 1 150px}
+button{background:var(--ink);color:#fff;border:0;padding:10px 18px;border-radius:8px;font:inherit;cursor:pointer}button:hover{background:var(--red)}button.link{background:none;color:var(--red);padding:0}
+summary{cursor:pointer;font-weight:600;padding:8px 0}.err{color:var(--red)}.muted{color:var(--mut)}
+.flash{background:#fff4d6;border:1px solid var(--gold);padding:10px 14px;border-radius:8px;margin-bottom:14px}
+.tag{padding:2px 10px;border-radius:99px;font-size:12px;background:#e3e8f2}.tag.sale{background:#d9f3e2}.tag.return,.tag.owed{background:#fde0dd}.tag.paid{background:#d9f3e2}.tag.in{background:#ffedbf}
+body.login{display:grid;place-items:center;min-height:100vh;background:var(--ink)}.card{background:#fff;padding:32px;border-radius:16px;width:min(360px,92vw);display:grid;gap:12px}.card h1{margin:0}
